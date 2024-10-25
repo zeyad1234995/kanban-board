@@ -1,0 +1,96 @@
+body{
+    background-color: #360b9a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.kanban-container{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1) ;
+    width: 800px;
+
+}
+h1{
+    text-align: center;
+    color: #333333f3
+}
+.input-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+#task-input{
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    font-size: 18px;
+    border-radius: 4px;
+}
+#task-input:focus{
+    outline: none;
+}
+
+#add-task-btn{
+    padding: 10px;
+    margin-left: 10px;
+    border: none;
+    color: white;
+    background-color: #333;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#add-task-btn:hover{
+    background-color: #555
+}
+.board{
+    display: flex;
+    justify-content: space-between;
+}
+.column{
+    width: 30%;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.column h2{
+    text-align: center;
+    margin: 10px 0px;
+    color: #333;
+}
+.task-list{
+    list-style: none;
+    min-height: 300px;
+}
+.task-list li{
+    background-color: #fff;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-list li.dragging{
+   opacity: 0.5; 
+}
+.task-list li.over{
+    border: 2px dashed #333;
+}
+.delete-btn{
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    padding: 5px 10 px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.delete-btn:hover{
+    background-color: #ff0000;
+}
